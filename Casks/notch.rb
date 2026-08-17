@@ -1,6 +1,6 @@
 cask "notch" do
-  version "1.0.2"
-  sha256 "7535a24e0b61c9bd6ee2d4611640c4d6261e42e0c89713d1a60f55d0ab686ca1"
+  version "1.0.3"
+  sha256 "a78000ace04da36d769dfa1a0b5a7c6276a1ea2d9d4e630a6f01d80a4e32869c"
 
   url "https://github.com/hyderay/notch/releases/download/v#{version}/Notch-v#{version}-macOS.zip",
       verified: "github.com/hyderay/notch/"
