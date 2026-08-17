@@ -8,7 +8,7 @@ cask "notch" do
   desc "Show Codex CLI and Claude Code status in the MacBook notch"
   homepage "https://github.com/hyderay/notch"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Notch.app"
   binary "#{appdir}/Notch.app/Contents/MacOS/notchctl"
