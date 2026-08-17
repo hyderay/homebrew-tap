@@ -13,6 +13,13 @@ cask "notch" do
   app "Notch.app"
   binary "#{appdir}/Notch.app/Contents/MacOS/notchctl"
 
+  caveats <<~EOS
+    Notch is currently ad-hoc signed. Before the first launch, remove the
+    quarantine attribute:
+
+      xattr -dr com.apple.quarantine "#{appdir}/Notch.app"
+  EOS
+
   zap trash: [
     "~/.notch",
     "~/Library/Preferences/com.wanquanlin.notch.plist",
